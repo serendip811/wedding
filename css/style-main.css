@@ -3192,6 +3192,46 @@ form .error {
 .portfolio-gallery .flex-control-nav {
   z-index: 111;
 }
+
+#show_more {
+  display: none;
+}
+
+@media only screen and (max-width: 479px) {
+  .portfolio-gallery .portfolio-item .overlay-shade {
+    opacity: 0.6;
+    filter: alpha(opacity=90);
+  }
+  .portfolio-gallery .portfolio-item .thumb .photo {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  .portfolio-gallery .portfolio-item .icons-holder {
+    top: 50%;
+  }
+  .portfolio-gallery .portfolio-item .icons-holder .icons-holder-inner a {
+    opacity: 1;
+    filter: alpha(opacity=1);
+  }
+
+  .portfolio-gallery .portfolio-item:first-child{
+    display: block;
+  }
+  .portfolio-gallery .portfolio-item{
+    display: none;
+  }
+
+  .portfolio-gallery .portfolio-item .text-holder {
+    opacity: 1;
+  }
+  #show_more {
+    display: block;
+  }
+}
+
+
 /*
  * Slider.less
  * -----------------------------------------------
